@@ -23,7 +23,7 @@ public class AppVersion extends CordovaPlugin {
             try {
                 PackageInfo packageInfo = packageManager.getPackageInfo(this.cordova.getActivity().getPackageName(), 0);
                 result = true;
-                callbackContext.success(packageInfo.versionCode);
+                callbackContext.success(packageInfo.versionName);
             }
             catch (NameNotFoundException exception) {
                 result = false;
