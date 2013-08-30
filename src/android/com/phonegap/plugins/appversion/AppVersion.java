@@ -1,4 +1,4 @@
-package org.apache.cordova.plugin.Version;
+package com.phonegap.plugins.appversion;
 
 import org.json.JSONArray;
 
@@ -6,10 +6,10 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 
-import org.apache.cordova.api.CallbackContext;
-import org.apache.cordova.api.CordovaPlugin;
-import org.apache.cordova.api.PluginResult;
-import org.apache.cordova.api.PluginResult.Status;
+import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaInterface;
+import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.PluginResult;
 
 public class AppVersion extends CordovaPlugin {
 
