@@ -14,6 +14,7 @@ window.appversion.getVersionNumber(function(versionNumber) {
 });
 ```
 
+Note: The android version returns the android:versionName value of AndroidManifest.xml
 
 ## Platforms
 
