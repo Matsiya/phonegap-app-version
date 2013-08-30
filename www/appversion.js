@@ -6,7 +6,7 @@ var AppVersion = function () {
 };
 
 
-AppVersion.prototype.send = function (callback) {
+AppVersion.prototype.getVersionNumber = function (callback) {
     exec(null, null, "AppVersion", "getVersionNumber", [callback]);
 };
 
