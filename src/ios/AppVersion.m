@@ -8,9 +8,9 @@
 
 @implementation AppVersion
 
-- (void) getVersionNumber:(NSMutableArray*)args withDict:(NSMutableDictionary*)options
+- (void) getVersionNumber:(CDVInvokedUrlCommand*)command
 {
-    NSString* callbackID = [args objectAtIndex:0];
+    NSString* callbackID = command.callbackId;
     NSString* version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
     
     CDVPluginResult *result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:version];

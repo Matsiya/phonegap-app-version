@@ -8,6 +8,6 @@
 
 @interface AppVersion : CDVPlugin
 
-- (void) getVersionNumber:(NSMutableArray*)args withDict:(NSMutableDictionary*)options;
+- (void) getVersionNumber:(CDVInvokedUrlCommand*)command;
 
 @end
