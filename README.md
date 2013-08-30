@@ -1,2 +1,2 @@
-#phonegap-app-version
-## Phonegap / Cordova plugin to get the application version number
+#Phonegap-app-version
+Phonegap / Cordova plugin to get the application version number
