@@ -10,6 +10,7 @@
     <js-module src="www/appversion.js" name="AppVersion">
         <clobbers target="appversion" />
     </js-module>
+    <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="AppVersion">
@@ -18,5 +19,16 @@
         </config-file>
         <header-file src="src/ios/AppVersion.h" />
         <source-file src="src/ios/AppVersion.m" />
+    </platform>
+
+    <!-- android -->
+    <platform name="android">
+        <source-file src="src/android/com/phonegap/plugins/appversion/AppVersion.java" target-dir="src/com/phonegap/plugins/appversion" />
+
+       <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="AppVersion">
+                <param name="android-package" value="com.phonegap.plugins.appversion.AppVersion" />
+            </feature>
+        </config-file>
     </platform>
 </plugin>
